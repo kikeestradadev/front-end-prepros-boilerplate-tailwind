@@ -4,6 +4,11 @@
 @tailwind utilities;
 
 @layer components {
+	.bg-custom {
+		background: rgba(0, 0, 0, 0.52);
+		box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.2);
+		backdrop-filter: blur(0px);
+	}
 	.section-container {
 		width: 100%;
 		max-width: 2500px;
@@ -11,7 +16,7 @@
 	}
 	.item-container {
 		width: 100%;
-		max-width: 1920px;
+		max-width: 1600px;
 		margin: 0 auto;
 	}
 }
