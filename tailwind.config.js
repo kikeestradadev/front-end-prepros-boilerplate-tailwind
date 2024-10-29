@@ -7,6 +7,5 @@ module.exports = {
 		'!wp-includes',
 		'!node_modules',
 		'!Prepros Export'
-	],
-	plugins: [require('@tailwindcss/typography')]
+	]
 };
