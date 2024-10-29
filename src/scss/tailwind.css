@@ -18,6 +18,12 @@
 		width: 100%;
 		max-width: 1600px;
 		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		@screen xl {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 }
 @layer base {
