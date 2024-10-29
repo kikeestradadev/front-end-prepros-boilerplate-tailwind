@@ -22,7 +22,6 @@
 		"url": "https://github.com/kikeestradadev/front-end-prepros-boilerplate-tailwind/issues"
 	},
 	"devDependencies": {
-		"@tailwindcss/typography": "^0.5.15",
 		"tailwindcss": "^3.4.14"
 	}
 }
