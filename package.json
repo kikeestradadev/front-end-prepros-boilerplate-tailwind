@@ -1,9 +1,9 @@
 {
-	"name": "front-end-prepros-boilerplate",
+	"name": "front-end-prepros-boilerplate-tailwind",
 	"version": "1.0.0",
-	"description": "gh=pages link: https://kikeestradadev.github.io/front-end-prepros-boilerplate",
+	"description": "gh=pages link: https://kikeestradadev.github.io/front-end-prepros-boilerplate-tailwind",
 	"main": "index.js",
-	"homepage": "https://kikeestradadev.github.io/front-end-prepros-boilerplate/",
+	"homepage": "https://kikeestradadev.github.io/front-end-prepros-boilerplate-tailwind/",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"deploy": "gh-pages -d public"
@@ -13,13 +13,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kikeestradadev/front-end-prepros-boilerplate.git"
+		"url": "git+https://github.com/kikeestradadev/front-end-prepros-boilerplate-tailwind.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/kikeestradadev/front-end-prepros-boilerplate/issues"
+		"url": "https://github.com/kikeestradadev/front-end-prepros-boilerplate-tailwind/issues"
 	},
 	"devDependencies": {
 		"@tailwindcss/typography": "^0.5.15",
