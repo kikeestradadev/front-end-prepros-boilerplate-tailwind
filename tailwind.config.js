@@ -14,7 +14,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'inter': ['"Inter"', 'sans-serif'],
+				'montserrat': ['"Montserrat"', 'sans-serif'],
 			},
 		},
 		screens: {			

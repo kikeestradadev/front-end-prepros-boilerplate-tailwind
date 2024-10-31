@@ -1,18 +1,20 @@
 div(class="section-container bg-[url('images/bg.png')] bg-cover bg-center")
-	div(class='item-container h-[972px] flex flex-col')
-		div(class='flex justify-between items-start max-[1280px]')
-			img(src="images/logo.svg", alt="logo" class='pt-6')
-			img(src="images/sticker.svg", alt="20 years" class='')
-		div(class='flex flex-col max-[800px] mx-auto border border-white')
-			div(class='text-white text-center font-montserrat text-4xl font-bold leading-none') Get a
-			div(class='flex justify-center items-center') 
-				span(class='w-1/2 text-[#FFCC15] text-[170px] font-extrabold') 30% 
-				span(class='w-1/2 text-[#fff] text-center text-[74px] font-bold') CASH BONUS 
-			div(class='text-center text-[36px] text-[#fff] font-bold') On Sports and up to $600 cash 
-			div(class='text-center text-[22px] text-[#fff] font-normal') Congrats, you're getting an extra 5% just by landing here! Enjoy your 30% cash bonus (normally 25%)
-			div 
-				a(href="") Lorem 
+	div(class='item-container h-[100vh] flex flex-col px-[15px] xl:px-[0] justify-between pb-[30px]')
 		div(class='flex justify-between items-start')
-			div 
-			div 
-			div 
+			img(src="images/logo.svg", alt="logo" class='pt-6 w-[76px] xl:w-[119px]')
+			img(src="images/sticker.png", alt="20 years" class=' w-[63px] xl:w-[97px]')
+		div(class='flex flex-col w-full max-w-[800px] mx-auto')
+			div(class='text-white text-center font-montserrat text-[24px] m:text-[36px] font-bold leading-none') Get a
+			div(class='flex flex-col l:flex-row justify-center items-center')
+				span(class='inline-flex text-[#FFCC15] text-[90px] l:text-[170px] font-extrabold leading-[91.4%] tracking-[-1.7px]') 30% 
+				span(class='inline-flex text-[#fff] text-center m:text-left m:pl-[15px] text-[26px] l:text-[74px] font-extrabold leading-[91.4%] tracking-[4.44px]') CASH BONUS 
+			div(class='text-center text-[26px] l:text-[36px] text-[#fff] font-bold') On Sports and up to $600 cash 
+			div(class='text-center text-[12px] l:text-[22px] text-[#fff] font-normal py-[16px] xl:py-[48px]') Congrats, you're getting an extra 5% just by landing here! Enjoy your 30% cash bonus (normally 25%)
+			a(href="#" class='w-[280px] l:w-[384px] h-[40px]  l:h-[61px] mx-auto bg-[#49FF87] text-center flex items-center justify-center rounded-[52px] text-[16px] l:text-[22px] font-extrabold leading-[24px] tracking-[0.88px] text-[#0F331B]') Claim my 30% Bonus 
+		div(class='bg-custom p-[30px] xl:p-[54px] grid grid-cols-1 l:grid-cols-2 lg:grid-cols-3 rounded-[16px] gap-5')
+			-for(let i = 1; i<=3; i++)
+				div(class='flex')
+					div(class='w-[30px] h-[30px] m:w-[50px] m:h-[50px] rounded-[50%] text-[#FFF] flex items-center justify-center text-[20px] l:text-[28px] font-bold leading-[120%] tracking-[-0.28px] border border-[#49FF87]') 1
+					div(class='flex-1 flex flex-col pl-[5px] justify-center')
+						span(class='text-[#FFF] text-[16px] l:text-[22px] font-bold leading-[110%]') Open an Account
+						span(class='text-[#C6C6C6] hidden m:block font-montserrat text-[14px] font-medium leading-[150%] tracking-[-0.14px]') Sign up in just a few clicks! Provide your email, create a password, and you’re ready to go.

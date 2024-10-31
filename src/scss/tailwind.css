@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,7 +28,7 @@
 }
 @layer base {
 	body {
-		@apply font-inter;
+		@apply font-montserrat;
 	}
 	h1 {
 		@apply text-[36px] leading-[43px] font-semibold tracking-[-0.72px] lg:text-[51px] lg:leading-[56px] lg:tracking-[-0.66px];
