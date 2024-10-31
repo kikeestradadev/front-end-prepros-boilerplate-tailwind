@@ -1,5 +1,6 @@
 // tailwind.config.js
 module.exports = {
+	mode: 'jit',  // Activa el modo JIT
 	content: [
 		'**/*.html',
 		'**/*.php',
@@ -9,10 +10,11 @@ module.exports = {
 		'!node_modules',
 		'!Prepros Export'
 	],
+	plugins: [require('@tailwindcss/typography')],
 	theme: {
 		extend: {
 			fontFamily: {
-				inter: ['"Inter"', 'sans-serif'],
+				'inter': ['"Inter"', 'sans-serif'],
 			},
 		},
 		screens: {			

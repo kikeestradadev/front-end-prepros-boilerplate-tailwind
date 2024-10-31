@@ -2,11 +2,11 @@ extends ../config/template
 append config
 	-currentPage		= "home"
 	-siteName			= 'site'
-	-content			= 'content' 
+	-content			= 'content'
 	-pageDescription	= 'Pagina inicial de MyBoilerplate'
 block main-header
 block main-container
-	//- include ../internal-modules/banner
+	include ../internal-modules/banner
 	include ../internal-modules/internal-module
 	include ../internal-modules/test.html
 block main-footer
