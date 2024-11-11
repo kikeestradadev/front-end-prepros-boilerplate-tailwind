@@ -13,10 +13,6 @@ $breakpoints 				:
 	@screen l {
 		--header-height 	: 64px;
 	}
-	//native color vars	
-	--header-bg      		: #007BDF;
-	--body-bg      			: #ffffff;
-	--footer-bg      		: #007BDF;
 }
 @layer base {
 	*,
@@ -44,49 +40,42 @@ $breakpoints 				:
 	
 	
 	h1 {
-		@apply text-[36px] leading-[43px] font-semibold tracking-[-0.72px] lg:text-[51px] lg:leading-[56px] lg:tracking-[-0.66px];
+		@apply text-[36px] leading-[43px] font-semibold tracking-[-0.72px] lg:text-[51px] lg:leading-[56px] lg:tracking-[-0.66px] mb-4;
 	}
 	h2 {
-		@apply text-[29px] leading-[35px] font-semibold tracking-[-0.58px] lg:text-[41px] lg:leading-[49px] lg:tracking-[-0.82px];
+		@apply text-[29px] leading-[35px] font-semibold tracking-[-0.58px] lg:text-[41px] lg:leading-[49px] lg:tracking-[-0.82px] mb-4;
 	}
 	h3 {
-		@apply text-[24px] leading-[29px] font-semibold tracking-[-0.48px] lg:text-[27px] lg:leading-[32px] lg:tracking-[-0.54px];
+		@apply text-[24px] leading-[29px] font-semibold tracking-[-0.48px] lg:text-[27px] lg:leading-[32px] lg:tracking-[-0.54px] mb-4;
 	}
 	h4 {
-		@apply text-[20px] leading-[28px] font-semibold tracking-[-0.4px] lg:text-[23px] lg:leading-[28px] lg:tracking-[-0.46px];
+		@apply text-[20px] leading-[28px] font-semibold tracking-[-0.4px] lg:text-[23px] lg:leading-[28px] lg:tracking-[-0.46px] mb-4;
 	}
 	h5 {
-		@apply text-[17px] leading-[27px] font-semibold tracking-[-0.34px] lg:text-[19px] lg:leading-[23px] lg:tracking-[-0.38px];
+		@apply text-[17px] leading-[27px] font-semibold tracking-[-0.34px] lg:text-[19px] lg:leading-[23px] lg:tracking-[-0.38px] mb-4;
 	}
 	h6 {
-		@apply text-[14px] leading-[25px] font-semibold tracking-[-0.28px] lg:text-[15px] lg:leading-[27px] lg:tracking-[-0.3px];
+		@apply text-[14px] leading-[25px] font-semibold tracking-[-0.28px] lg:text-[15px] lg:leading-[27px] lg:tracking-[-0.3px] mb-4;
 	}
 	p {
-		@apply text-[15px] leading-[27px] lg:text-[16px] lg:leading-[22px];
+		@apply text-[15px] leading-[27px] font-normal tracking-[-0.4px] lg:text-[16px] lg:leading-[22px] lg:tracking-[-0.3px] mb-4;
 	}
 }
-
 @layer components {
-	.bg-custom {
-		background			: rgba(0, 0, 0, 0.52);
-		box-shadow			: 0px 9px 18px 0px rgba(0, 0, 0, 0.2);
-		backdrop-filter		: blur(0px);
-	}
 	.main-header{
-		background 			: var(--header-bg);
+		background 			: #007BDF;
 		min-height     		: var(--header-height);
 		position			: fixed;
 		top					: 0;
 		width				: 100%;
 	}
 	.main-container{
-		border: 1px solid #000;
 		width: 100%;
 		max-width: 4000px;
 		margin: 0 auto;
 	}
 	.main-footer {
-		background 			: var(--footer-bg);
+		background 			: #007BDF;
 		color      			: #FFF;
 		padding    			: 2rem 0;
 		margin-top 			: auto;
