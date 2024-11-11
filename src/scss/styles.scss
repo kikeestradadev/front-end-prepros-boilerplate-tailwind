@@ -1,98 +1,48 @@
 @import "media-queries";
-$breakpoints 		:
+$breakpoints 				:
 	(
-		s	: 0,
-		m	: 768px,
-		l	: 1024px,
-		lg	: 1440px,
-		xl	: 1600px,
-		xxl	: 1920px
+		s					: 0,
+		m					: 768px,
+		l					: 1024px,
+		lg					: 1440px,
+		xl					: 1600px,
+		xxl					: 1920px
 );
-@include from(m){
-	.patito{
-		color: red;
+:root {
+	--header-height 		: 48px;
+	@screen l {
+		--header-height 	: 64px;
 	}
-}
-
-@include fromTo(s,m){
-	.patito-2{
-		color: red;
-	}
-}
-@layer components {
-	.bg-custom {
-		background: rgba(0, 0, 0, 0.52);
-		box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.2);
-		backdrop-filter: blur(0px);
-	}
-	.bg-custom-2 {
-		background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #000C46;
-		box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.20);
-		backdrop-filter: blur(16.5px);
-	}
-	.section-container {
-		width: 100%;
-		max-width: 2500px;
-		margin: 0 auto;
-	}
-	.card-title{
-		color: #FFF;
-		font-family: Montserrat;
-		font-size: 16px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 110%; /* 24.2px */
-		@screen l {
-			font-size: 22px;
-		}
-	}
-	.card-description{
-		color: #C6C6C6;
-		font-family: Montserrat;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: 150%; /* 21px */
-		letter-spacing: -0.14px;
-	}
-	.item-container {
-		width: 100%;
-		max-width: 1600px;
-		margin: 0 auto;
-		padding-left: 15px;
-		padding-right: 15px;
-		@screen xl {
-			padding-left: 0;
-			padding-right: 0;
-		}
-	}
-	.footer-title{
-		color: #FFF;
-		font-family: Montserrat;
-		font-size: 16px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 110%; /* 24.2px */
-		@screen l {
-			font-size: 22px;
-		}
-	}
-	.footer-description{
-		color: #C6C6C6;
-		font-size: 12px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: 150%; /* 21px */
-		letter-spacing: -0.14px;
-		@screen l {
-			font-size: 14px;
-		}
-	}
+	//native color vars	
+	--header-bg      		: #007BDF;
+	--body-bg      			: #ffffff;
+	--footer-bg      		: #007BDF;
 }
 @layer base {
-	body {
-		@apply font-montserrat;
+	*,
+	*::before,
+	*::after {
+		box-sizing			: border-box;
 	}
+	::selection {
+		color				: white;
+		background			: #00CBFF;
+	}
+	body {
+		margin         		: var(--header-height) 0 0 0;
+		min-height     		: calc(100vh - var(--header-height));
+		background 			: var(--body-bg);
+		@apply flex flex-col;
+	}
+	
+	@screen xl {
+		.container {
+			padding-left	: 0 !important;
+			padding-right	: 0 !important;
+		}
+	}
+	
+	
 	h1 {
 		@apply text-[36px] leading-[43px] font-semibold tracking-[-0.72px] lg:text-[51px] lg:leading-[56px] lg:tracking-[-0.66px];
 	}
@@ -113,5 +63,32 @@ $breakpoints 		:
 	}
 	p {
 		@apply text-[15px] leading-[27px] lg:text-[16px] lg:leading-[22px];
+	}
+}
+
+@layer components {
+	.bg-custom {
+		background			: rgba(0, 0, 0, 0.52);
+		box-shadow			: 0px 9px 18px 0px rgba(0, 0, 0, 0.2);
+		backdrop-filter		: blur(0px);
+	}
+	.main-header{
+		background 			: var(--header-bg);
+		min-height     		: var(--header-height);
+		position			: fixed;
+		top					: 0;
+		width				: 100%;
+	}
+	.main-container{
+		border: 1px solid #000;
+		width: 100%;
+		max-width: 4000px;
+		margin: 0 auto;
+	}
+	.main-footer {
+		background 			: var(--footer-bg);
+		color      			: #FFF;
+		padding    			: 2rem 0;
+		margin-top 			: auto;
 	}
 }
