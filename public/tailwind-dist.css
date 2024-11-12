@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-  --header-height: 48px;
-}
-
-@media (min-width: 960px) {
-  :root {
-    --header-height: 64px;
-  }
-}
-
 @font-face {
   font-family: 'CascadiaCode';
 
@@ -488,29 +478,39 @@ video {
   display: none;
 }
 
+:root {
+  --header-height 		: 48px;
+}
+
+@media (min-width: 960px) {
+
+:root {
+    --header-height 	: 64px;
+}
+  }
+
 *,
-  *::before,
-  *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+	*::before,
+	*::after {
+  -webkit-box-sizing			: border-box;
+          box-sizing			: border-box;
 }
 
 ::-moz-selection {
-  color: white;
-  background: #00CBFF;
+  color				: white;
+  background			: #00CBFF;
 }
 
 ::selection {
-  color: white;
-  background: #00CBFF;
+  color				: white;
+  background			: #00CBFF;
 }
 
 body {
-  margin: 48px 0 0 0;
-  margin: var(--header-height) 0 0 0;
-  min-height: calc(100vh - 48px);
-  min-height: calc(100vh - var(--header-height));
-  background: var(--body-bg);
+  margin				: 48px 0 0 0;
+  margin				: var(--header-height) 0 0 0;
+  min-height			: calc(100vh - 48px);
+  min-height			: calc(100vh - var(--header-height));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,8 +809,8 @@ p{
   --tw-bg-opacity: 1;
   background-color: rgba(0, 123, 223, 1);
   background-color: rgba(0, 123, 223, var(--tw-bg-opacity));
-  min-height: 48px;
-  min-height: var(--header-height);
+  min-height			: 48px;
+  min-height			: var(--header-height);
 }
 
 .main-container{
@@ -818,15 +818,6 @@ p{
   margin-right: auto;
   width: 100%;
   max-width: 4000px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media (min-width: 1600px){
-  .main-container{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }
 
 .main-footer{
