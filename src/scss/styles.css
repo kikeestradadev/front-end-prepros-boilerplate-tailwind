@@ -1,0 +1,12 @@
+@layer components {
+  .main-header {
+    @apply bg-[#007BDF] fixed top-0 w-full;
+    min-height: var(--header-height);
+  }
+  .main-container {
+    @apply w-full max-w-[4000px] mx-auto;
+  }
+  .main-footer {
+    @apply bg-[#007BDF] text-white py-8 mt-[auto];
+  }
+}
