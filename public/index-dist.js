@@ -11,6 +11,16 @@ var coreModule = function coreModule() {
 };
 /* harmony default export */ __webpack_exports__["default"] = (coreModule);
 
+/***/ }),
+/* 2 */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+var internalModule = function internalModule() {
+  console.log('Hola internal Module');
+};
+/* harmony default export */ __webpack_exports__["default"] = (internalModule);
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -56,12 +66,13 @@ var __webpack_exports__ = {};
 !function() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core_modules_coreModule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _internal_modules_internalModule__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /*here start core layout ui scripts imports*/
 
 /*here finish core layout ui scripts imports*/
 
 /*here start internal layout ui components scripts imports*/
-// import internalModule from './internal-modules/internalModule';
+
 /*here finish internal layout ui components scripts imports*/
 
 (function () {
@@ -70,14 +81,9 @@ __webpack_require__.r(__webpack_exports__);
   /*here finish core layout ui scripts functions*/
 })();
 (function () {
-  document.addEventListener('DOMContentLoaded', function () {
-    var tables = document.querySelectorAll('.table');
-    tables.forEach(function (table) {
-      if (typeof FooTable === 'function') {
-        new FooTable(table);
-      }
-    });
-  });
+  /*here start internal layout ui components functions*/
+  (0,_internal_modules_internalModule__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  /*here finish internal layout ui components functions*/
 })();
 }();
 /******/ })()

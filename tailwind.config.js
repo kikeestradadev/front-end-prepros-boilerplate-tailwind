@@ -12,14 +12,14 @@ module.exports = {
 	],
 	plugins: [require('@tailwindcss/typography')],
 	theme: {
-		container: {
-			center: true, // Centra el contenedor
-			padding: '15px',
-			screens: {
-			DEFAULT: '100%', // Configura el ancho del contenedor para todas las pantallas
-			xl: '1600px', // Máximo ancho de 1600px para pantallas grandes
-			},
-		},
+		// container: {
+		// 	center: true, // Centra el contenedor
+		// 	padding: '15px',
+		// 	screens: {
+		// 	DEFAULT: '100%', // Configura el ancho del contenedor para todas las pantallas
+		// 	xl: '1600px', // Máximo ancho de 1600px para pantallas grandes
+		// 	},
+		// },
 		extend: {
 		fontFamily: {
 				'sans': ['Montserrat', 'sans-serif'], 
