@@ -16,21 +16,33 @@
 body {
 	margin: var(--header-height) 0 0 0;
 	min-height: calc(100vh - var(--header-height));
-	@apply flex flex-col;
+	display: flex;
+	flex-direction: column
 }
 .main-header{
-	@apply bg-[#007BDF] fixed top-0 w-full;
-	min-height			: var(--header-height);
+	background-color: #007BDF;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	min-height: var(--header-height)
 }
 .main-container{
-	@apply w-full max-w-[4000px] mx-auto;
-}
-.container{
-	@apply w-full max-w-[1600px] mx-auto px-[15px];
-	@screen lg {
-		@apply px-0;
+	width: 100%;
+	max-width: 4000px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@include from(1630px) {
+		padding: 0;
 	}
 }
+.container{
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 !important;
+}
 .main-footer {
-	@apply bg-[#007BDF] text-white py-8 mt-[auto];
+	background-color: #007BDF;
+	padding: 15px 0;
+	margin-top: auto;
 }

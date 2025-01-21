@@ -1,0 +1,5 @@
+ol, ul, menu {
+	list-style: revert !important; /* Restaura el estilo por defecto del navegador */
+	margin: revert !important; /* Restaura los márgenes predeterminados */
+	padding: revert !important; /* Restaura el padding predeterminado */
+}
