@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,7 +6,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -312,180 +312,176 @@ template {
   display: none;
 }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-::-moz-selection {
-  color: white;
-  background: #9e852e;
-}
-
-::selection {
-  color: white;
-  background: #9e852e;
-}
-
-:root {
-  --header-height: 48px;
-}
-@screen l {
+@layer base {
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  ::-moz-selection {
+    color: white;
+    background: #9e852e;
+  }
+  ::selection {
+    color: white;
+    background: #9e852e;
+  }
   :root {
-    --header-height: 64px;
+    --header-height: 48px;
   }
-}
-
-body {
-  margin: var(--header-height) 0 0 0 !important;
-  min-height: calc(100vh - var(--header-height));
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.main-header {
-  background-color: #007BDF;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  min-height: var(--header-height);
-}
-
-.main-container {
-  width: 100%;
-  max-width: 4000px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-@media screen and (min-width: 1630px) {
+  @screen l {
+    :root {
+      --header-height: 64px;
+    }
+  }
+  body {
+    margin: var(--header-height) 0 0 0 !important;
+    min-height: calc(100vh - var(--header-height));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-header {
+    background-color: #007BDF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: var(--header-height);
+  }
   .main-container {
-    padding: 0;
+    width: 100%;
+    max-width: 4000px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
-}
-
-.container {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 !important;
-}
-
-.main-footer {
-  background-color: #007BDF;
-  padding: 15px 0;
-  margin-top: auto;
-}
-
-@font-face {
-  font-family: "CascadiaCode";
-  src: url("./CascadiaCode_VTT.ttf");
-}
-:root {
-  --header-color: #1F2024;
-  --paragraph-color:#1F2024;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--header-color);
-}
-
-body {
-  font-family: "Montserrat";
-}
-
-h1 {
-  font: normal normal 600 36px/43px Montserrat;
-  letter-spacing: -0.72px;
-}
-@screen l {
+  @media screen and (min-width: 1630px) {
+    .main-container {
+      padding: 0;
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+  .main-footer {
+    background-color: #007BDF;
+    padding: 15px 0;
+    margin-top: auto;
+  }
+  :root {
+    --header-color: #1F2024;
+    --paragraph-color:#1F2024;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--header-color);
+  }
+  body {
+    font-family: "Montserrat";
+  }
   h1 {
-    font: normal normal 600 51px/56px Montserrat;
-    letter-spacing: -0.66px;
+    font: normal normal 600 36px/43px Montserrat;
+    letter-spacing: -0.72px;
   }
-}
-
-h2 {
-  font: normal 600 29px/35px Montserrat;
-  letter-spacing: -0.58px;
-}
-@screen l {
+  @media screen and (min-width: 960px) {
+    h1 {
+      font: normal normal 600 51px/56px Montserrat;
+      letter-spacing: -0.66px;
+    }
+  }
   h2 {
-    font: normal 600 41px/49px Montserrat;
-    letter-spacing: -0.82px;
+    font: normal 600 29px/35px Montserrat;
+    letter-spacing: -0.58px;
   }
-}
-
-h3 {
-  font: normal 600 24px/29px Montserrat;
-  letter-spacing: -0.48px;
-}
-@screen l {
+  @media screen and (min-width: 960px) {
+    h2 {
+      font: normal 600 41px/49px Montserrat;
+      letter-spacing: -0.82px;
+    }
+  }
   h3 {
-    font: normal 600 27px/32px Montserrat;
-    letter-spacing: -0.54px;
+    font: normal 600 24px/29px Montserrat;
+    letter-spacing: -0.48px;
   }
-}
-
-h4 {
-  font: normal 600 20px/28px Montserrat;
-  letter-spacing: -0.4px;
-}
-@screen l {
+  @media screen and (min-width: 960px) {
+    h3 {
+      font: normal 600 27px/32px Montserrat;
+      letter-spacing: -0.54px;
+    }
+  }
   h4 {
-    font: normal 600 23px/28px Montserrat;
-    letter-spacing: -0.46px;
+    font: normal 600 20px/28px Montserrat;
+    letter-spacing: -0.4px;
   }
-}
-
-h5 {
-  font: normal 600 17px/27px Montserrat;
-  letter-spacing: -0.34px;
-}
-@screen l {
+  @media screen and (min-width: 960px) {
+    h4 {
+      font: normal 600 23px/28px Montserrat;
+      letter-spacing: -0.46px;
+    }
+  }
   h5 {
-    font: normal 600 19px/23px Montserrat;
-    letter-spacing: -0.38px;
+    font: normal 600 17px/27px Montserrat;
+    letter-spacing: -0.34px;
   }
-}
-
-h6 {
-  font: normal 600 14px/25px Montserrat;
-  letter-spacing: -0.28px;
-}
-@screen l {
+  @media screen and (min-width: 960px) {
+    h5 {
+      font: normal 600 19px/23px Montserrat;
+      letter-spacing: -0.38px;
+    }
+  }
   h6 {
-    font: normal 600 15px/27px Montserrat;
-    letter-spacing: -0.3px;
+    font: normal 600 14px/25px Montserrat;
+    letter-spacing: -0.28px;
   }
-}
-
-p {
-  font: normal normal 15px/27px Montserrat;
-  letter-spacing: 0px;
-  --paragraph-color:#1F2024;
-}
-@screen l {
+  @media screen and (min-width: 960px) {
+    h6 {
+      font: normal 600 15px/27px Montserrat;
+      letter-spacing: -0.3px;
+    }
+  }
   p {
-    font: normal normal 16px/22px Montserrat;
+    font: normal normal 15px/27px Montserrat;
     letter-spacing: 0px;
+    --paragraph-color:#1F2024;
+  }
+  @media screen and (min-width: 960px) {
+    p {
+      font: normal normal 16px/22px Montserrat;
+      letter-spacing: 0px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .main-container {
+    width: 100%;
+    max-width: 3500px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 1630px) {
+    .main-container {
+      padding: 0 0;
+    }
   }
 }
-
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+@layer components {
+  menu, ol, ul {
+    list-style: disc; /* Restaura los estilos de lista predeterminados para `ol`, `disc` es usual para `ul` */
+    margin: 1em 0; /* Valores comunes por defecto de margen para listas */
+    padding: 0 0 0 40px; /* Valores comunes por defecto de relleno para listas, proporcionando espacio para marcadores de lista */
+  }
 }
