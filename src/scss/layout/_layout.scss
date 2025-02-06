@@ -1,48 +1,54 @@
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+//layout
+:root {
+	--header-height 		: 3rem;
+	@include from(l) {
+		--header-height 	: 4rem;
+	}
+	//native color vars	
+	--header-bg      		: #007BDF;
+	--body-bg      			: #ffffff;
+	--footer-bg      		: #007BDF;
+
 }
+
+
 ::selection {
 	color: white;
-	background: #9e852e;
+	background: #00CBFF;
 }
-:root {
-	--header-height: 48px;
-	@screen l {
-		--header-height: 64px;
-	}
+
+strong {
+	font-weight 	: 700;
 }
+
 body {
-	margin: var(--header-height) 0 0 0 !important;
-	min-height: calc(100vh - var(--header-height));
-	display: flex;
-	flex-direction: column
+	margin         	: var(--header-height) 0 0 0;
+	min-height     	: calc(100vh - var(--header-height));
+	background 		: var(--body-bg);
+	display        	: flex;
+	flex-direction 	: column;
 }
 .main-header{
-	background-color: #007BDF;
+	background 		: var(--header-bg);
+	min-height     	: var(--header-height);
 	position: fixed;
 	top: 0;
 	width: 100%;
-	min-height: var(--header-height)
+	
 }
 .main-container{
 	width: 100%;
-	max-width: 4000px;
+	max-width: 3500px;
 	margin: 0 auto;
 	padding: 0 15px;
-	@include from(1630px) {
-		padding: 0;
+	@include from(1630px){
+		padding: 0 0;
 	}
 }
-.container{
-	width: 100%;
-	max-width: 1600px;
-	margin: 0 auto;
-	padding: 0 !important;
-}
+
 .main-footer {
-	background-color: #007BDF;
-	padding: 15px 0;
-	margin-top: auto;
+	background 		: var(--footer-bg);
+	color      		: #FFF;
+	padding    		: 2rem 0;
+	margin-top 		: auto;
 }

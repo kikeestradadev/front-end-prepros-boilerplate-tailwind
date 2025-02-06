@@ -2,31 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-  *,
-  *::before,
-  *::after {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+  :root {
+    --header-height: 3rem;
+    --header-bg: #007BDF;
+    --body-bg: #ffffff;
+    --footer-bg: #007BDF;
+  }
+  @media screen and (min-width: 960px) {
+    :root {
+      --header-height: 4rem;
+    }
   }
   ::-moz-selection {
     color: white;
-    background: #9e852e;
+    background: #00CBFF;
   }
   ::selection {
     color: white;
-    background: #9e852e;
+    background: #00CBFF;
   }
-  :root {
-    --header-height: 48px;
-  }
-  @screen l {
-    :root {
-      --header-height: 64px;
-    }
+  strong {
+    font-weight: 700;
   }
   body {
-    margin: var(--header-height) 0 0 0 !important;
+    margin: var(--header-height) 0 0 0;
     min-height: calc(100vh - var(--header-height));
+    background: var(--body-bg);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -36,32 +37,27 @@
             flex-direction: column;
   }
   .main-header {
-    background-color: #007BDF;
+    background: var(--header-bg);
+    min-height: var(--header-height);
     position: fixed;
     top: 0;
     width: 100%;
-    min-height: var(--header-height);
   }
   .main-container {
     width: 100%;
-    max-width: 4000px;
+    max-width: 3500px;
     margin: 0 auto;
     padding: 0 15px;
   }
   @media screen and (min-width: 1630px) {
     .main-container {
-      padding: 0;
+      padding: 0 0;
     }
   }
-  .container {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 !important;
-  }
   .main-footer {
-    background-color: #007BDF;
-    padding: 15px 0;
+    background: var(--footer-bg);
+    color: #FFF;
+    padding: 2rem 0;
     margin-top: auto;
   }
   :root {
@@ -70,6 +66,7 @@
   }
   h1, h2, h3, h4, h5, h6 {
     color: var(--header-color);
+    margin-bottom: 30px;
   }
   html, body {
     font-family: "Montserrat", sans-serif;
@@ -164,6 +161,9 @@
       line-height: 27px;
       letter-spacing: -0.3px;
     }
+  }
+  p {
+    margin-bottom: 20px;
   }
   p, span, a, ul li, ol li {
     font-style: normal;
