@@ -54,12 +54,6 @@
     font-family: "Montserrat", sans-serif;
     letter-spacing: -0.5px;
   }
-  @media screen and (min-width: 0) and (max-width: calc(480px - 1px)) {
-    h1 {
-      color: red !important;
-      background: blue !important;
-    }
-  }
   @screen l {
     h1 {
       font-size: 51px;
@@ -193,7 +187,7 @@
     margin: 0 auto;
     padding: 0 15px;
   }
-  @screen l {
+  @media (min-width: 1630px) {
     .main-container {
       padding: 0 0;
     }

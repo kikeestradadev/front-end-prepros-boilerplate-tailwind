@@ -4,7 +4,6 @@
 @use "core-modules/core-modules";
 @use "internal-modules/internal-modules";
 @use "hacks/utilities";
-@use "core/media-queries" as *;
 
 @tailwind base;
 @tailwind components;
@@ -20,5 +19,5 @@
 	@include internal-modules.internal-modules;
 }
 @layer utilities {
-    @include utilities.utilities;
+    @include utilities.utilities; 
 }

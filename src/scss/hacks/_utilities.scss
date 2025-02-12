@@ -4,7 +4,7 @@
 		max-width: 3500px;
 		margin: 0 auto;
 		padding: 0 15px;
-		@screen l{
+		@media (min-width: 1630px) {
 			padding: 0 0;
 		}
 	}
