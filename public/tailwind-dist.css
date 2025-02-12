@@ -471,13 +471,12 @@ video {
 }
 
 :root {
-  --header-height: 3rem;
   --header-bg: #007BDF;
   --body-bg: #ffffff;
   --footer-bg: #007BDF;
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   :root {
     --header-height: 4rem;
   }
@@ -512,7 +511,7 @@ body {
 
 :root {
   --header-color: #1F2024;
-  --paragraph-color:#1F2024;
+  --paragraph-color: #1F2024;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -531,13 +530,20 @@ h1 {
           font-feature-settings: normal;
   font-variant: normal;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
+  font-size: 32px;
+  line-height: 40px;
   font-family: "Montserrat", sans-serif;
-  letter-spacing: -0.72px;
+  letter-spacing: -0.5px;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 0) and (max-width: calc(480px - 1px)) {
+  h1 {
+    color: red !important;
+    background: blue !important;
+  }
+}
+
+@media (min-width: 960px) {
   h1 {
     font-size: 51px;
     line-height: 56px;
@@ -554,7 +560,7 @@ h2 {
   letter-spacing: -0.58px;
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   h2 {
     font-size: 41px;
     line-height: 49px;
@@ -571,7 +577,7 @@ h3 {
   letter-spacing: -0.48px;
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   h3 {
     font-size: 27px;
     line-height: 32px;
@@ -588,7 +594,7 @@ h4 {
   letter-spacing: -0.4px;
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   h4 {
     font-size: 23px;
     line-height: 28px;
@@ -605,7 +611,7 @@ h5 {
   letter-spacing: -0.34px;
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   h5 {
     font-size: 19px;
     line-height: 23px;
@@ -622,7 +628,7 @@ h6 {
   letter-spacing: -0.28px;
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   h6 {
     font-size: 15px;
     line-height: 27px;
@@ -647,7 +653,7 @@ p, span, a, ul li, ol li {
   --paragraph-color: #1F2024;
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   p, span, a, ul li, ol li {
     font-size: 16px;
     line-height: 22px;
@@ -668,6 +674,15 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+menu, ol, ul {
+  list-style: disc;
+  /* Restaura los estilos de lista predeterminados para `ol`, `disc` es usual para `ul` */
+  margin: 1em 0;
+  /* Valores comunes por defecto de margen para listas */
+  padding: 0 0 0 40px;
+  /* Valores comunes por defecto de relleno para listas, proporcionando espacio para marcadores de lista */
 }
 
 *, ::before, ::after {
@@ -836,15 +851,6 @@ img {
   .container {
     max-width: 1600px;
   }
-}
-
-menu, ol, ul {
-  list-style: disc;
-  /* Restaura los estilos de lista predeterminados para `ol`, `disc` es usual para `ul` */
-  margin: 1em 0;
-  /* Valores comunes por defecto de margen para listas */
-  padding: 0 0 0 40px;
-  /* Valores comunes por defecto de relleno para listas, proporcionando espacio para marcadores de lista */
 }
 
 .order-1 {

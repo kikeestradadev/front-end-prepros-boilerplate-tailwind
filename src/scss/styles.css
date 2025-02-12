@@ -3,12 +3,11 @@
 @tailwind utilities;
 @layer base {
   :root {
-    --header-height: 3rem;
     --header-bg: #007BDF;
     --body-bg: #ffffff;
     --footer-bg: #007BDF;
   }
-  @media screen and (min-width: 960px) {
+  @screen l {
     :root {
       --header-height: 4rem;
     }
@@ -37,7 +36,7 @@
   }
   :root {
     --header-color: #1F2024;
-    --paragraph-color:#1F2024;
+    --paragraph-color: #1F2024;
   }
   h1, h2, h3, h4, h5, h6 {
     color: var(--header-color);
@@ -50,12 +49,18 @@
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 32px;
+    line-height: 40px;
     font-family: "Montserrat", sans-serif;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.5px;
   }
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 0) and (max-width: calc(480px - 1px)) {
+    h1 {
+      color: red !important;
+      background: blue !important;
+    }
+  }
+  @screen l {
     h1 {
       font-size: 51px;
       line-height: 56px;
@@ -70,7 +75,7 @@
     font-family: "Montserrat", sans-serif;
     letter-spacing: -0.58px;
   }
-  @media screen and (min-width: 960px) {
+  @screen l {
     h2 {
       font-size: 41px;
       line-height: 49px;
@@ -85,7 +90,7 @@
     font-family: "Montserrat", sans-serif;
     letter-spacing: -0.48px;
   }
-  @media screen and (min-width: 960px) {
+  @screen l {
     h3 {
       font-size: 27px;
       line-height: 32px;
@@ -100,7 +105,7 @@
     font-family: "Montserrat", sans-serif;
     letter-spacing: -0.4px;
   }
-  @media screen and (min-width: 960px) {
+  @screen l {
     h4 {
       font-size: 23px;
       line-height: 28px;
@@ -115,7 +120,7 @@
     font-family: "Montserrat", sans-serif;
     letter-spacing: -0.34px;
   }
-  @media screen and (min-width: 960px) {
+  @screen l {
     h5 {
       font-size: 19px;
       line-height: 23px;
@@ -130,7 +135,7 @@
     font-family: "Montserrat", sans-serif;
     letter-spacing: -0.28px;
   }
-  @media screen and (min-width: 960px) {
+  @screen l {
     h6 {
       font-size: 15px;
       line-height: 27px;
@@ -150,7 +155,7 @@
     letter-spacing: 0px;
     --paragraph-color: #1F2024;
   }
-  @media screen and (min-width: 960px) {
+  @screen l {
     p, span, a, ul li, ol li {
       font-size: 16px;
       line-height: 22px;
@@ -167,22 +172,30 @@
     max-width: 100%;
     height: auto;
   }
+  menu, ol, ul {
+    list-style: disc; /* Restaura los estilos de lista predeterminados para `ol`, `disc` es usual para `ul` */
+    margin: 1em 0; /* Valores comunes por defecto de margen para listas */
+    padding: 0 0 0 40px; /* Valores comunes por defecto de relleno para listas, proporcionando espacio para marcadores de lista */
+  }
+}
+@layer components {
+  .core-module-style {
+    color: green;
+  }
+  .internal-module-style {
+    color: red;
+  }
+}
+@layer utilities {
   .main-container {
     width: 100%;
     max-width: 3500px;
     margin: 0 auto;
     padding: 0 15px;
   }
-  @media screen and (min-width: 1630px) {
+  @screen l {
     .main-container {
       padding: 0 0;
     }
-  }
-}
-@layer components {
-  menu, ol, ul {
-    list-style: disc; /* Restaura los estilos de lista predeterminados para `ol`, `disc` es usual para `ul` */
-    margin: 1em 0; /* Valores comunes por defecto de margen para listas */
-    padding: 0 0 0 40px; /* Valores comunes por defecto de relleno para listas, proporcionando espacio para marcadores de lista */
   }
 }
