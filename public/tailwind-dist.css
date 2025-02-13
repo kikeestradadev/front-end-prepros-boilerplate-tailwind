@@ -938,6 +938,19 @@ menu, ol, ul {
   padding: 0.75rem;
 }
 
+.main-container {
+  width: 100%;
+  max-width: 3500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 1630px) {
+  .main-container {
+    padding: 0 0;
+  }
+}
+
 @media (min-width: 480px) {
   .sm\:w-1\/2 {
     width: 50%;
