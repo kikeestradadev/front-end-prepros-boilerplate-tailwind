@@ -139,7 +139,7 @@
   p {
     margin-bottom: 20px;
   }
-  p, span, a, ul li, ol li {
+  p, span, a, ul li, ol li, table td {
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -150,7 +150,24 @@
     --paragraph-color: #1F2024;
   }
   @screen l {
-    p, span, a, ul li, ol li {
+    p, span, a, ul li, ol li, table td {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0px;
+    }
+  }
+  table th {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 27px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    --paragraph-color: #1F2024;
+  }
+  @screen l {
+    table th {
       font-size: 16px;
       line-height: 22px;
       letter-spacing: 0px;
@@ -166,10 +183,18 @@
     max-width: 100%;
     height: auto;
   }
-  menu, ol, ul {
-    list-style: disc; /* Restaura los estilos de lista predeterminados para `ol`, `disc` es usual para `ul` */
-    margin: 1em 0; /* Valores comunes por defecto de margen para listas */
-    padding: 0 0 0 40px; /* Valores comunes por defecto de relleno para listas, proporcionando espacio para marcadores de lista */
+  ol, ul {
+    display: block;
+    margin-block: 1em;
+    margin-inline: 0;
+    -webkit-padding-start: 40px;
+            padding-inline-start: 40px;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  ul {
+    list-style-type: disc;
   }
 }
 @layer components {
@@ -177,7 +202,7 @@
     color: green;
   }
   .internal-module-style {
-    color: red;
+    color: green;
   }
 }
 @layer utilities {
