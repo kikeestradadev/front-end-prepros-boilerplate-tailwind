@@ -1,0 +1,59 @@
+section(class="main-container")
+	div(class="container") 
+		h1 Write Markdown in the html file (html) 
+		:markdown-it(html)
+			```html
+				<!DOCTYPE html>
+				<html lang="en">
+					<head>
+						<title>Pug</title>
+						<script type="text/javascript">
+							foo = true;
+							bar = function () {};
+							if (foo) { bar(1 + 5) }
+						</script>
+					</head>
+					<body>
+						<h1>Pug - node template engine</h1>
+						<div id="container" class="col">
+						<p>You are amazing</p>
+						<p> Lorem ipsum.</p>
+						</div>
+					</body>
+				</html>
+			```
+		h1 Importing Markdown files in the html
+		include:markdown-it ../../md/example.md
+		include:markdown-it ../../md/readme.md
+	div(class="container")
+		h1 Markdown
+		h2 Text HTML Flat
+		:markdown-it
+			# This is a Markdown Title Example
+			this is a paragraph example
+			## This is a Markdown Subtitle Example
+			this is a paragraph example
+			### This is a Markdown Subtitle Example
+			this is a paragraph example
+			#### This is a Markdown Subtitle Example
+			this is a paragraph example
+	div(class="container")
+		h2 Text Flat
+		:markdown-it(html)
+			```
+			# Hola
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			```
+	div(class="container")
+		h2 Text Flat background
+		:markdown-it(html)
+			```html
+			# Hola
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			```

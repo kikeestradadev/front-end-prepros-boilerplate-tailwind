@@ -1,0 +1,36 @@
+section(class="main-container")
+	div(class="container") 
+		h1 Text HTML Flat
+		:markdown-it
+			# This is a Markdown Title Example
+			this is a paragraph example
+			## This is a Markdown Subtitle Example
+			this is a paragraph example
+			### This is a Markdown Subtitle Example
+			this is a paragraph example
+			#### This is a Markdown Subtitle Example
+			this is a paragraph example
+	div(class="container") 
+		h1 Importing Markdown files in the html
+		include:markdown-it ../../md/example.md
+		include:markdown-it ../../md/readme.md
+	div(class="container")
+		h2 Text Flat
+		:markdown-it(html)
+			```
+			# Hola
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			```
+	div(class="container")
+		h2 Text Flat background
+		:markdown-it(html)
+			```html
+			# Hola
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+			```
