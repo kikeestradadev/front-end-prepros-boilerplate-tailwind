@@ -2076,7 +2076,7 @@ __webpack_require__.r(__webpack_exports__);
 (function () {
   /*here start core layout ui scripts functions*/
   (0,_core_modules_coreModule__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  prismjs();
+  prismjs__WEBPACK_IMPORTED_MODULE_1___default().highlightAll();
   /*here finish core layout ui scripts functions*/
 })();
 (function () {

@@ -10,7 +10,7 @@ import internalModule from './internal-modules/internalModule';
 (() => {
 	/*here start core layout ui scripts functions*/
     coreModule();
-	prismjs();
+	Prism.highlightAll();
 	/*here finish core layout ui scripts functions*/
 })();
 
