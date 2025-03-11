@@ -2,6 +2,7 @@
 import coreModule from './core-modules/coreModule';
 /*here finish core layout ui scripts imports*/
 
+import Prism from 'prismjs';
 /*here start internal layout ui components scripts imports*/
 import internalModule from './internal-modules/internalModule';
 /*here finish internal layout ui components scripts imports*/
@@ -9,6 +10,7 @@ import internalModule from './internal-modules/internalModule';
 (() => {
 	/*here start core layout ui scripts functions*/
     coreModule();
+	prismjs();
 	/*here finish core layout ui scripts functions*/
 })();
 
