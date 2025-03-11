@@ -1,0 +1,27 @@
+section(class='main-container')
+		div(class='container')
+			div(class='flex flex-col l:flex-row')
+				div(class='order-2 l:order-1 w-full l:w-[400px] bg-gray-300 min-h-32') 
+					ul
+						li: a(href='#') component-1
+						li: a(href='#') component-2
+						li: a(href='#') component-3 
+						li: a(href='#') component-4
+						li: a(href='#') component-5
+						li: a(href='#') component-6
+						li: a(href='#') component-7
+						li: a(href='#') component-8
+						li: a(href='#') component-9
+						li: a(href='#') component-10
+				div(class='order-1 l:order-2 w-full l:flex-1 bg-gray-200 min-h-32') 
+					include component-1.pug
+					include component-2.pug
+					include component-3.pug
+					include component-4.pug
+					include component-5.pug
+					include component-6.pug
+					include component-7.pug
+					include component-8.pug
+					include component-9.pug
+					include component-10.pug
+block scripts

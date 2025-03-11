@@ -156,21 +156,34 @@
       </div>
     </section>
     <section class="main-container">
-      <div class="container"> 
-        <h1>Text HTML Flat</h1><h1>This is a Markdown Title Example</h1>
-<p>this is a paragraph example</p>
-<h2>This is a Markdown Subtitle Example</h2>
-<p>this is a paragraph example</p>
-<h3>This is a Markdown Subtitle Example</h3>
-<p>this is a paragraph example</p>
-<h4>This is a Markdown Subtitle Example</h4>
-<p>this is a paragraph example</p>
+      <div class="container">
+        <div class="flex flex-col l:flex-row">
+          <div class="order-2 l:order-1 w-full l:w-[400px] bg-gray-300 min-h-32"> 
+            <ul>
+              <li><a href="#">component-1</a></li>
+              <li><a href="#">component-2</a></li>
+              <li><a href="#">component-3 </a></li>
+              <li><a href="#">component-4</a></li>
+              <li><a href="#">component-5</a></li>
+              <li><a href="#">component-6</a></li>
+              <li><a href="#">component-7</a></li>
+              <li><a href="#">component-8</a></li>
+              <li><a href="#">component-9</a></li>
+              <li><a href="#">component-10</a></li>
+            </ul>
+          </div>
+          <div class="order-1 l:order-2 w-full l:flex-1 bg-gray-200 min-h-32"> 
+            <div class="flex flex-col">
+              <h2>Component 1 </h2><pre><code class="language-html"># Hola
+- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+</code></pre>
 
-      </div>
-      <div class="container"> 
-        <h1>Importing Markdown files in the html</h1><h1>This is a Markdown Example</h1>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-<pre><code class="language-html">&lt;a class=&quot;button&quot;&gt;.button.first-color&lt;/a&gt;
+            </div>
+            <div class="flex flex-col">
+              <h2>Component 2</h2><pre><code class="language-html">&lt;a class=&quot;button&quot;&gt;.button.first-color&lt;/a&gt;
 &lt;a class=&quot;button second-color&quot;&gt;.button.second-color&lt;/a&gt;
 &lt;a class=&quot;button third-color&quot;&gt;.button.third-color&lt;/a&gt;
 &lt;a class=&quot;button accent-color&quot;&gt;.button.accent-color&lt;/a&gt;
@@ -179,23 +192,76 @@
 &lt;a class=&quot;button light-color&quot;&gt;.button.light-color&lt;/a&gt;
 
 </code></pre>
-<pre><code class="language-javascript">alert('Hola Mundo')
 
+            </div>
+            <div class="flex flex-col">
+              <h2>Component 3</h2><pre><code class="language-javascript">alert('Hola Mundo')
 </code></pre>
-<pre><code class="language-css">body{
+
+            </div>
+            <div class="flex flex-col">
+              <h2>Component 4</h2><pre><code class="language-css">body{
 	background: red;
 }
 </code></pre>
-        
-      </div>
-      <div class="container">
-        <h2>Text Flat background</h2><pre><code class="language-html"># Hola
+
+            </div>
+            <div class="flex flex-col">
+              <h2>Component 5</h2><pre><code class="language-html"># Hola
 - Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
 - Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
 - Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
 - Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
 </code></pre>
 
+            </div>
+            <div class="flex flex-col">
+              <h2>Component 6</h2><pre><code class="language-html">&lt;a class=&quot;button&quot;&gt;.button.first-color&lt;/a&gt;
+&lt;a class=&quot;button second-color&quot;&gt;.button.second-color&lt;/a&gt;
+&lt;a class=&quot;button third-color&quot;&gt;.button.third-color&lt;/a&gt;
+&lt;a class=&quot;button accent-color&quot;&gt;.button.accent-color&lt;/a&gt;
+&lt;a class=&quot;button dark-color&quot;&gt;.button.dark-color&lt;/a&gt;
+&lt;a class=&quot;button text-color&quot;&gt;.button.text-color&lt;/a&gt;
+&lt;a class=&quot;button light-color&quot;&gt;.button.light-color&lt;/a&gt;
+
+</code></pre>
+
+            </div>
+            <div class="flex flex-col">
+              <h2>Component 7</h2><pre><code class="language-javascript">alert('Hola Mundo')
+</code></pre>
+
+            </div>
+            <div class="flex flex-col">
+              <h2>Component 8</h2><pre><code class="language-css">body{
+	background: red;
+}
+</code></pre>
+
+            </div>
+            <div class="flex flex-col">
+              <h2>Component 9</h2><pre><code class="language-html"># Hola
+- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+- Lorem ipsum dolor sit amet consectetur adipisicing `elit`.
+</code></pre>
+
+            </div>
+            <div class="flex flex-col">
+              <h2>Component 10</h2><pre><code class="language-html">&lt;a class=&quot;button&quot;&gt;.button.first-color&lt;/a&gt;
+&lt;a class=&quot;button second-color&quot;&gt;.button.second-color&lt;/a&gt;
+&lt;a class=&quot;button third-color&quot;&gt;.button.third-color&lt;/a&gt;
+&lt;a class=&quot;button accent-color&quot;&gt;.button.accent-color&lt;/a&gt;
+&lt;a class=&quot;button dark-color&quot;&gt;.button.dark-color&lt;/a&gt;
+&lt;a class=&quot;button text-color&quot;&gt;.button.text-color&lt;/a&gt;
+&lt;a class=&quot;button light-color&quot;&gt;.button.light-color&lt;/a&gt;
+
+</code></pre>
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
